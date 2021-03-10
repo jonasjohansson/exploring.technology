@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src="https://unpkg.com/aframe@latest"></script>
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<a-scene embedded arjs>
+			<a-marker preset="hiro" smooth="true">
+				<a-box color="red" position="-1 -1 0"></a-box>
+				<a-box color="green"></a-box>
+				<a-box color="blue" position="1 1 0"></a-box>
+			</a-marker>
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
