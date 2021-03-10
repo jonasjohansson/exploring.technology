@@ -1,17 +1,13 @@
+<!--
+https://jonasjohansson.github.io/exploring.technology/A-Frame/image.html
+-->
 <html>
 	<head>
-		<!--<script src="https://unpkg.com/aframe@latest"></script>-->
-		<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+		<script src="https://unpkg.com/aframe@latest"></script>
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 	</head>
-
 	<body>
-		<a-scene
-			vr-mode-ui="enabled: false;"
-			renderer="antialias: true; alpha: true; precision: mediump;"
-			embedded
-			arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-		>
+		<a-scene embedded arjs>
 			<a-nft
 				type="nft"
 				url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/data/dataNFT/pinball"
@@ -22,7 +18,6 @@
 			>
 				<a-plane
 					color="green"
-					src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft-video/pinball.jpg"
 					width="164"
 					height="205"
 					rotation="-90 0 0"
